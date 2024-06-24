@@ -1,0 +1,93 @@
+---
+import '@fontsource-variable/onest';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html class="scroll-smooth" lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+    <div class="__variable_20b187 group/spotlight relative">
+      <div id="backgroundDiv" class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"></div>
+      <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div class="lg:flex lg:justify-between lg:gap-4">
+          <Header />
+          <slot />
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
+<style is:global>
+	:root {
+
+	}
+	html {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+	}
+  .active .nav-indicator {
+        width: 4rem;
+        --tw-bg-opacity: 1;
+        background-color: rgb(226 232 240/var(--tw-bg-opacity));
+    }
+    .active .nav-text {
+        --tw-text-opacity: 1;
+        color: rgb(254 240 138 / var(--tw-text-opacity));
+    }
+</style>
+<script is:inline>
+  document.addEventListener('mousemove', function(e) {
+    const div = document.getElementById('backgroundDiv');
+    const x = e.clientX;
+    const y = e.clientY + document.documentElement.scrollTop;
+    div.style.background = `radial-gradient(500px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+  });
+
+  // Array de elementos que quieres observar
+  const about = document.getElementById('about');
+  const experience = document.getElementById('experience');
+  const projects = document.getElementById('projects');
+  const index = document.querySelectorAll('.tag')
+
+  // Opciones para el observer
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.9
+  };
+
+  // Función callback para el observer
+  const callback = function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        index.forEach(element => {
+          element.classList.remove('active');
+        })
+        if(entry.target === about) index[0].classList.add('active');
+        if(entry.target === experience) index[1].classList.add('active');
+        if(entry.target === projects) index[2].classList.add('active');
+      }
+    });
+  };
+
+  // Crear el observer
+  const observer = new IntersectionObserver(callback, options);
+
+  // Observar cada elemento
+  observer.observe(about);
+  observer.observe(experience);
+  observer.observe(projects);
+</script>

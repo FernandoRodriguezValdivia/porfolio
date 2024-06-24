@@ -1,0 +1,14 @@
+[
+  {
+    "image": "https://picsum.photos/id/237/200/300",
+    "name": "Sportify",
+    "description": "Desarrollé y mantuve componentes críticos utilizados en la construcción del sistema de gestión integrado, abarcando tanto el frontend como las funciones en el backend para la administración empresarial. Colaboré estrechamente con equipos multidisciplinarios, incluyendo desarrolladores, diseñadores y gestores de producto, para implementar y promover las mejores prácticas en accesibilidad web.",
+    "tecnologies": [
+      "JavaScript",
+      "React",
+      "HTML & SCSS",
+      "Tailwind",
+      ".NetCore"
+    ]
+  }
+]
