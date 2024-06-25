@@ -12,10 +12,7 @@ import CardProject from './CardProject.astro';
       {
         projects.map(project => (
           <CardProject
-            image = {project.image}
-            name = {project.name}
-            description = {project.description}
-            tecnologies = {project.tecnologies}
+            {...project}
           />
         ))
       }
