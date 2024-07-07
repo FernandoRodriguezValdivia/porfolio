@@ -66,19 +66,35 @@ const { title } = Astro.props;
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.9
+    threshold: [0.5, 1]
   };
+
+  const thresholdById = {
+    'about': 1,
+    'experience': 1,
+    'projects': 0.5,
+  }
 
   // Función callback para el observer
   const callback = function(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        index.forEach(element => {
-          element.classList.remove('active');
-        })
-        if(entry.target === about) index[0].classList.add('active');
-        if(entry.target === experience) index[1].classList.add('active');
-        if(entry.target === projects) index[2].classList.add('active');
+        const isVisible = entry.intersectionRatio >= thresholdById[entry.target.id]
+        if(entry.target === about && isVisible){
+          index[0].classList.add('active');
+          index[1].classList.remove('active');
+          index[2].classList.remove('active');
+        }
+        if(entry.target === experience && isVisible){
+          index[1].classList.add('active');
+          index[0].classList.remove('active');
+          index[2].classList.remove('active');
+        }
+        if(entry.target === projects && isVisible){
+          index[2].classList.add('active');
+          index[0].classList.remove('active');
+          index[1].classList.remove('active');
+        }
       }
     });
   };
