@@ -1,20 +1,5 @@
 [
   {
-    "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/clonebnb/main/front-clonebnb/src/assets/images/bg-readme.png",
-    "alt": "Plataforma CloneBnb",
-    "name": "CloneBnb",
-    "description": "Es una plataforma de alojamiento y alquiler vacacional que permite a los usuarios buscar y reservar espacios. Los usuarios anfitriones pueden crear anuncios de sus propiedades para que los huéspedes los encuentren y reserven.",
-    "link": "https://github.com/FernandoRodriguezValdivia/clonebnb",
-    "tecnologies": [
-      "JavaScript",
-      "NextJS",
-      "HTML & SCSS",
-      "Tailwind",
-      "NodeJS",
-      "Express"
-    ]
-  },
-  {
     "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/space-invaders/main/previews/preview2.jpg",
     "alt": "Juego Space-Invaders",
     "name": "Space-Invaders",
@@ -29,5 +14,20 @@
     "description": "Este proyecto es una implementación del clásico juego de Tic Tac Toe (Tres en Línea) con una interesante modificación. En esta versión, cada jugador tiene que pensar estratégicamente ya que cada tres turnos, la primera marca que hizo el jugador se elimina automáticamente.",
     "link": "https://github.com/FernandoRodriguezValdivia/tic-tac-toe-modificado",
     "tecnologies": ["ReactJS", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/clonebnb/main/front-clonebnb/src/assets/images/bg-readme.png",
+    "alt": "Plataforma CloneBnb",
+    "name": "CloneBnb",
+    "description": "Es una plataforma de alojamiento y alquiler vacacional que permite a los usuarios buscar y reservar espacios. Los usuarios anfitriones pueden crear anuncios de sus propiedades para que los huéspedes los encuentren y reserven.",
+    "link": "https://github.com/FernandoRodriguezValdivia/clonebnb",
+    "tecnologies": [
+      "JavaScript",
+      "NextJS",
+      "HTML & SCSS",
+      "Tailwind",
+      "NodeJS",
+      "Express"
+    ]
   }
 ]
