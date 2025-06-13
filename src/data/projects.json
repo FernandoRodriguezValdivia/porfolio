@@ -29,5 +29,20 @@
       "NodeJS",
       "Express"
     ]
-  }
+  },
+  {
+  "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/practice-tracker/refs/heads/main/previews/preview1.png",
+  "alt": "Shipment Tracker App",
+  "name": "Shipment Tracker",
+  "description": "Aplicación web para rastrear el estado de envíos marítimos. Simula la consulta de pedidos por ID, mostrando estado actual, ubicación, ETA e historial de eventos. Desarrollado para demostrar habilidades avanzadas en React 18 como useTransition, manejo de estado y diseño con Tailwind.",
+  "link": "https://github.com/FernandoRodriguezValdivia/practice-tracker",
+  "tecnologies": [
+    "TypeScript",
+    "React 18",
+    "TailwindCSS",
+    "Vite",
+    "useTransition",
+    "Mock Fetch"
+  ]
+}
 ]
