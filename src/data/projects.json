@@ -1,11 +1,11 @@
 [
   {
-    "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/space-invaders/main/previews/preview2.jpg",
-    "alt": "Juego Space-Invaders",
-    "name": "Space-Invaders",
-    "description": "Este es un juego clásico inspirado en Space Invaders, desarrollado con JavaScript, HTML y CSS. Enfréntate a hordas de bichos extraterrestres y jefes desafiantes en una batalla por la supervivencia de la Tierra.",
-    "link": "https://github.com/FernandoRodriguezValdivia/space-invaders",
-    "tecnologies": ["JavaScript", "HTML", "CSS"]
+    "image": "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/6a1d06b709beab000856f754/screenshot_2026-06-01-04-12-50-0000.webp&fit=cover&h=500&q=40&w=800",
+    "alt": "Dashboard de Alquileres",
+    "name": "Dashboard de Alquileres",
+    "description": "Dashboard de Alquileres es una aplicación web diseñada para visualizar información relacionada con propiedades de alquiler. Permite a los usuarios ver métricas de alquileres, como alquiler promedio, precio por metro cuadrado promedio, propiedad más rentable, tasa de ocupación y distribución por rangode precios.",
+    "link": "https://github.com/FernandoRodriguezValdivia/dashboard-alquileres",
+    "tecnologies": ["ReactJS", "HTML", "CSS", "JavaScript"]
   },
   {
     "image": "https://raw.githubusercontent.com/FernandoRodriguezValdivia/tic-tac-toe-modificado/main/public/preview.png",
