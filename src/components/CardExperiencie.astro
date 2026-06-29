@@ -2,38 +2,95 @@
 import Badge from "./Badge.astro";
 
 interface Props {
-	date: string;
+  date: string;
   position: string;
   name: string;
+  companyUrl?: string;
+  isPrivate?: boolean;
   description: string;
   tecnologies: string[];
+  achievements?: string[];
+  context?: string;
 }
 
-const { date, position, name, description, tecnologies } = Astro.props;
+const { 
+  date, 
+  position, 
+  name, 
+  companyUrl, 
+  isPrivate = true, 
+  description, 
+  tecnologies, 
+  achievements,
+  context 
+} = Astro.props;
 ---
 
 <li class="mb-12">
   <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
     <div class="absolute -inset-x-1 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:bg-slate-800/50 lg:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:drop-shadow-lg"></div>
-    <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label={date}>{date}</header>
+    
+    <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label={date}>
+      {date}
+    </header>
+    
     <div class="z-10 sm:col-span-6">
       <h3 class="font-medium leading-snug text-slate-200">
         <div>
-          <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-yellow-200 focus-visible:text-yellow-200  group/link text-base" aria-label={position}>
+          <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-yellow-200 focus-visible:text-yellow-200 group/link text-base">
             <span class="absolute -inset-x-1 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-            <span>{position} ·
-              <span class="inline-block">{name}</span>
+            <span>{position} ·</span>
+            <span class="inline-block ml-1">
+              {companyUrl ? (
+                <a 
+                  href={companyUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 text-slate-200 hover:text-yellow-200 transition-colors"
+                >
+                  {name}
+                  <svg class="w-3 h-3 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              ) : (
+                name
+              )}
             </span>
           </span>
         </div>
       </h3>
+
+      {isPrivate && (
+        <span class="inline-flex items-center gap-1.5 mt-1 text-xs font-mono text-slate-400 border border-slate-600/50 px-2 py-0.5 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400/70"></span>
+          Código privado / Propietario
+        </span>
+      )}
+
+      {context && (
+        <p class="mt-2 text-sm text-slate-400 italic border-l-2 border-yellow-200/30 pl-3">
+          {context}
+        </p>
+      )}
+
       <p class="mt-2 text-sm leading-normal">{description}</p>
-      <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-        {
-          tecnologies.map(name => (
-            <Badge name={name}/>
-          ))
-        }
+
+      {achievements && achievements.length > 0 && (
+        <ul class="mt-3 space-y-1 text-sm text-slate-300 list-none">
+          {achievements.map((achievement) => (
+            <li class="leading-relaxed">
+              <span class="text-yellow-200/70 mr-1">✦</span>
+              {achievement}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <ul class="mt-3 flex flex-wrap gap-1" aria-label="Technologies used">
+        {tecnologies.map((name) => (
+          <Badge name={name} />
+        ))}
       </ul>
     </div>
   </div>

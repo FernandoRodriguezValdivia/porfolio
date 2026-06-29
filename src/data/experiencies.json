@@ -1,15 +1,46 @@
 [
   {
-    "date": "2022 — 2024",
-    "position": "FullStack Developer",
-    "name": "SIG Manglar",
-    "description": "Desarrollé y mantuve componentes críticos utilizados en la construcción del sistema de gestión integrado, abarcando tanto el frontend como las funciones en el backend para la administración empresarial. Colaboré estrechamente con equipos multidisciplinarios, incluyendo desarrolladores, diseñadores y gestores de producto, para implementar y promover las mejores prácticas en accesibilidad web.",
+    "date": "Nov 2024 — May 2025",
+    "position": "Desarrollador Frontend",
+    "name": "Singular Tech",
+    "isPrivate": true,
+    "description": "Aplicación web para la gestión de propiedades en alquiler, permitiendo a los usuarios registrar, buscar y administrar inmuebles de manera eficiente.",
     "tecnologies": [
-      "JavaScript",
+      "Angular",
+      "TypeScript",
+      "Bootstrap",
+      ".NET Core",
+      "REST APIs"
+    ],
+    "achievements": [
+      "Diseñé e implementé una arquitectura de componentes reutilizables basada en Atomic Design, reduciendo el tiempo de desarrollo de nuevas funcionalidades en un 30%.",
+      "Implementé un sistema de búsqueda filtrada en tiempo real con Angular, manejando registros sin afectar el rendimiento.",
+      "Lideré la migración de buenas prácticas de estructuración en Angular, participando activamente en revisiones de código y ceremonias ágiles bajo SCRUM, logrando reducir los bugs en producción en un 40%."
+    ],
+    "context": "Proyecto B2C para el mercado inmobiliario peruano, con funcionalidades de gestion de archivos y mapas."
+  },
+  {
+    "date": "Ago 2022 — Oct 2024",
+    "position": "Desarrollador Frontend",
+    "name": "Soluciones Tecnológicas",
+    "isPrivate": true,
+    "description": "Plataforma integral de gestión empresarial utilizada por organizaciones para administrar sus procesos internos, clientes y personal.",
+    "tecnologies": [
       "React",
-      "HTML & SCSS",
-      "Tailwind",
-      ".NetCore"
-    ]
+      "TypeScript",
+      "Redux",
+      "TailwindCSS",
+      "Jest",
+      "React Hook Form",
+      ".NET Core",
+      "Node JS"
+    ],
+    "achievements": [
+      "Diseñé e implementé un sistema de formularios dinámicos personalizables con React, TypeScript y React Hook Form, aplicando custom hooks y gestión de estado con Context API y Redux, reduciendo el tiempo de desarrollo de nuevos formularios en un 50%.",
+      "Gestioné el estado global de la aplicación para más de 15 módulos, asegurando una experiencia de usuario fluida y sin fricciones.",
+      "Implementé pruebas unitarias con Jest para componentes críticos, alcanzando un 70% de cobertura y reduciendo los bugs en producción en un 35%.",
+      "Optimicé el rendimiento de los endpoints, reduciendo el tiempo de respuesta de 8s a 1s mediante mejoras en la comunicación cliente-servidor."
+    ],
+    "context": "Sistema B2B utilizado por organizaciones en el sector empresarial peruano."
   }
 ]
