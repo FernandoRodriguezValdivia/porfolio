@@ -1,23 +1,23 @@
 [
   {
-    "image": "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/6a1d06b709beab000856f754/screenshot_2026-06-01-04-12-50-0000.webp&fit=cover&h=500&q=40&w=800",
-    "alt": "Dashboard de Alquileres",
-    "name": "Dashboard de Alquileres",
-    "description": "Dashboard de Alquileres es una aplicación web diseñada para visualizar información relacionada con propiedades de alquiler. Permite a los usuarios ver métricas de alquileres, como alquiler promedio, precio por metro cuadrado promedio, propiedad más rentable, tasa de ocupación y distribución por rango de precios.",
-    "link": "https://dashboar-alquileres.netlify.app/",
-    "tecnologies": [
-      "ReactJS",
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  },
-  {
     "image": "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/6a2387bc8168ac000863ea91/screenshot_2026-06-06-02-36-56-0000.webp&fit=cover&h=500&q=40&w=800",
     "alt": "Clasificador de Dígitos",
     "name": "Clasificador de Dígitos",
     "description": "Clasificador de Dígitos es una aplicación web que utiliza un modelo de aprendizaje automático para reconocer dígitos escritos a mano. Los usuarios pueden dibujar un dígito en la interfaz y el modelo predice qué número es, mostrando la probabilidad de cada posible dígito. Desarrollado con ReactJS, HTML, CSS y JavaScript. El modelo de clasificación se entrenó utilizando TensorFlow con el conjunto de datos MNIST, que contiene imágenes de dígitos escritos a mano. La aplicación proporciona una experiencia interactiva para demostrar cómo el aprendizaje automático puede reconocer patrones en los datos visuales.",
     "link": "https://digit-classifier-test.netlify.app/",
+    "tecnologies": [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "TypeScript"
+    ]
+  },
+  {
+    "image": "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/6a1d06b709beab000856f754/screenshot_2026-06-01-04-12-50-0000.webp&fit=cover&h=500&q=40&w=800",
+    "alt": "Dashboard de Alquileres",
+    "name": "Dashboard de Alquileres",
+    "description": "Dashboard de Alquileres es una aplicación web diseñada para visualizar información relacionada con propiedades de alquiler. Permite a los usuarios ver métricas de alquileres, como alquiler promedio, precio por metro cuadrado promedio, propiedad más rentable, tasa de ocupación y distribución por rango de precios.",
+    "link": "https://dashboar-alquileres.netlify.app/",
     "tecnologies": [
       "ReactJS",
       "HTML",
